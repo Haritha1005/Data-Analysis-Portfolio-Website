@@ -1,4 +1,132 @@
 <!DOCTYPE HTML>
+<html>
+<head>
+    <title>HARITHA DATA ANALYST PORTFOLIO</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            color: #444;
+        }
+        .hamburger {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 30px;
+            height: 4px;
+            margin: 5px;
+            background-color: #007acc;
+        }
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #f5f5f5;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+            z-index: 999;
+        }
+        .menu.active {
+            transform: translateX(0);
+        }
+        .menu ul {
+            list-style: none;
+            padding: 20px;
+            margin: 0;
+        }
+        .menu ul li {
+            margin: 20px 0;
+        }
+        .menu ul li a {
+            color: #007acc;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .menu ul li a:hover {
+            color: #005f99;
+        }
+        .sub-menu {
+            margin-top: 10px;
+            padding-left: 15px;
+            display: none;
+        }
+        .sub-menu a {
+            font-size: 16px;
+            display: block;
+            margin: 5px 0;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+        }
+        .overlay.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" onclick="toggleMenu()"></div>
+
+    <!-- Side Menu -->
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="https://github.com/Haritha1005/DATA-ANALYSIS-PORTFOLIO/blob/main/Intro.md" target="_blank">About / Introduction</a></li>
+            <li>
+                <a href="#" onclick="toggleSubMenu()">Project Overview</a>
+                <ul class="sub-menu" id="sub-menu">
+                    <li><a href="https://github.com/Haritha1005/DATA-ANALYSIS-PORTFOLIO/blob/main/SQL%20-%20Projects/sql_projects_overview.md" target="_blank">SQL</a></li>
+                    <li><a href="https://github.com/Haritha1005/DATA-ANALYSIS-PORTFOLIO/blob/main/Python%20-%20Projects/python_projects_overview.md" target="_blank">Python</a></li>
+                    <li><a href="https://github.com/Haritha1005/DATA-ANALYSIS-PORTFOLIO/blob/main/Tableau%20Dashboards/tableau_dashboards_overview.md" target="_blank">Tableau</a></li>
+                    <li><a href="https://github.com/Haritha1005/DATA-ANALYSIS-PORTFOLIO/blob/main/PowerBI%20Reports/powerBI_reports_overview.md" target="_blank">Power BI</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <header style="text-align: center; padding: 20px;">
+        <h1>HARITHA DATA ANALYST PORTFOLIO</h1>
+        <p>Data Analyst specializing in Python, SQL, Tableau, and Power BI.</p>
+    </header>
+
+    <!-- Navigation Buttons -->
+    <nav style="text-align: center; margin: 20px 0;">
+        <a href="#python-projects" class="button">Python Projects</a>
+        <a href="#sql-projects" class="button">SQL Projects</a>
+        <a href="#powerbi-reports" class="button">Power BI Reports</a>
+        <a href="#tableau-dashboards" class="button">Tableau Dashboards</a>
+    </nav>
+	
+	<!DOCTYPE HTML>
 <!--
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
@@ -55,9 +183,9 @@
 									
 									<h2><a href="https://github.com/Haritha1005/DATA-ANALYSIS-PORTFOLIO/blob/main/SQL%20-%20Projects/ScienceQtech_Employee_Performance_Mapping.sql">ScienceQtech Employee Performance Mapping<br />
 									</a></h2>
-									<p>This project focused on analyzing the employee database of ScienceQtech, a startup in the Data Science field. The dataset comprised employee information such as roles, departments, experience, salaries, performance ratings, and projects undertaken. Utilizing SQL queries, the analysis aimed to extract relevant insights on employee performance and project involvement. Key tasks included data importing, database creation, SQL queries execution, and performance optimization.</p>
+									<p>This project involved analyzing employee performance and project contributions within ScienceQtech, a data science startup. Using SQL, I created a database and executed various queries to extract insights from employee data, including roles, departments, performance ratings, salaries, and experience. Tasks included importing data, creating ER diagrams, writing complex queries, and optimizing performance with indexing and stored procedures. The analysis provided valuable insights into employee engagement, performance trends, and project involvement, supporting data-driven decision-making for organizational improvement. This project showcased my expertise in SQL, data analysis, and database management.</p>
 								</header>
-								<a href="https://github.com/Haritha1005/DATA-ANALYSIS-PORTFOLIO/blob/main/SQL%20-%20Projects/ScienceQtech_Employee_Performance_Mapping.sql" class="image main"><img src="images/Employee Attrition.jpg" alt="" /></a>
+								<a href="https://github.com/Haritha1005/DATA-ANALYSIS-PORTFOLIO/blob/main/SQL%20-%20Projects/ScienceQtech_Employee_Performance_Mapping.sql" class="image main"><img src="images/employee performance.avif" alt="" /></a>
 								<ul class="actions special">
 									<li><a href="https://github.com/Haritha1005/DATA-ANALYSIS-PORTFOLIO/blob/main/SQL%20-%20Projects/ScienceQtech_Employee_Performance_Mapping.sql" class="button large">View Project</a></li>
 								</ul>
@@ -72,7 +200,7 @@
 										</a></h2>
 									</header>
 									<a href="https://github.com/Haritha1005/DATA-ANALYSIS-PORTFOLIO/blob/main/SQL%20-%20Projects/Air%20Cargo%20Analysis.sql" class="image fit"><img src="images/air cargo analysis.webp" alt="" /></a>
-									<p>This project involved analyzing the dataset of Air Cargo, an aviation company, to identify regular customers for targeted offers, analyze busiest routes for resource allocation, and determine ticket sales details to improve operational efficiency. SQL queries were used to extract relevant information from tables such as Customer, Passengers_on_flights, Ticket_details, and Routes. Tasks included creating an ER diagram, writing queries for data extraction and analysis, implementing constraints, and creating stored procedures and views for efficient data retrieval.</p>
+									<p>This project involved managing and analyzing data for an air cargo company, focusing on flight routes, passenger details, and ticket sales. Using SQL, I created a database to track flight routes, passengers, and revenue generation across different ticket classes. Key tasks included writing queries to extract and filter data, create views and stored procedures, and implement advanced SQL functions like window functions, ROLLUP, and cursors. The project also involved optimizing the data retrieval process through execution plans and handling user permissions. This analysis provided insights into ticket sales, customer demographics, and flight performance, contributing to more efficient operations and business strategy formulation.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/Haritha1005/DATA-ANALYSIS-PORTFOLIO/blob/main/SQL%20-%20Projects/Air%20Cargo%20Analysis.sql" class="button">View Project</a></li>
 									</ul>
@@ -84,7 +212,7 @@
 										</a></h2>
 									</header>
 									<a href="https://github.com/Haritha1005/DATA-ANALYSIS-PORTFOLIO/blob/main/Python%20-%20Projects/App%20Ratings%20Prediction.ipynb" class="image fit"><img src="images/google-play-store-ratings.webp" alt="" /></a>
-									<p>The project involves thorough data analysis and preprocessing steps to clean and prepare the dataset for model building. It includes handling null values, correcting data types, performing outlier treatment, and conducting univariate and bivariate analysis to understand the relationship between different features and the target variable (app rating).</p>
+									<p>This project predicts app ratings on the Google Play Store, utilizing various features such as app category, size, and user reviews. The process included data preprocessing (handling missing values and outliers), exploratory data analysis (EDA), and feature engineering. A linear regression model was developed, with R² scores of 0.19 on the training set and 0.13 on the test set. Key technologies used: Python, Pandas, NumPy, Scikit-learn.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/Haritha1005/DATA-ANALYSIS-PORTFOLIO/blob/main/Python%20-%20Projects/App%20Ratings%20Prediction.ipynb" class="button">View Project</a></li>
 									</ul>
@@ -96,7 +224,7 @@
 										</a></h2>
 									</header>
 									<a href="https://github.com/Haritha1005/DATA-ANALYSIS-PORTFOLIO/blob/main/Insurance%20Data%20Analysis.ipynb" class="image fit"><img src="images/insurance data analysis.jpg" alt="" /></a>
-									<p> An insurance agency, ABC Insurance, wants to perform exploratory data analysis (EDA) on their dataset containing information about policyholders and claims to gain insights for better business decisions.</p>
+									<p> This project involved analyzing an insurance dataset to explore the relationship between various features and medical insurance charges. Using Python and libraries like Pandas, Matplotlib, and Seaborn, I conducted a comprehensive analysis of the dataset. Key steps included checking for missing values, visualizing the distribution of key features like BMI and charges, and examining the impact of smoker status on premium charges. The analysis revealed a positive correlation between age and insurance charges, with a notable difference between smokers and non-smokers in terms of premium increases. Various plots such as count plots, scatter plots, box plots, and line plots were utilized to uncover insights, which will help in creating a predictive model for estimating medical insurance costs.</p>
 									<ul class="actions special">
 										<li><a href="https://github.com/Haritha1005/DATA-ANALYSIS-PORTFOLIO/blob/main/Insurance%20Data%20Analysis.ipynb" class="button">View Project</a></li>
 									</ul>
@@ -109,7 +237,7 @@
 										</a></h2>
 									</header>
 									<a href="https://public.tableau.com/app/profile/haritha1005/vizzes" class="image fit"><img src="images/tableau public.png" alt="" /></a>
-									<p>Dive into my Tableau Public collection, where I showcase a range of interactive, data-driven visualizations across various domains. Each dashboard is meticulously designed to simplify complex data, presenting it in an intuitive and visually engaging format. These interactive dashboards enable users to easily uncover trends, patterns, and actionable insights—empowering data-driven decision-making.</p>
+									<p>Explore my Tableau Public collection, featuring a range of interactive, data-driven visualizations across various domains. Each dashboard is carefully crafted to simplify complex data, presenting it in an intuitive and visually appealing format. These interactive visualizations allow users to easily uncover trends, patterns, and actionable insights, empowering data-driven decision-making.</p>
 									<ul class="actions special">
 										<li><a href="https://public.tableau.com/app/profile/haritha1005/vizzes" class="button">View Project</a></li>
 									</ul>
@@ -126,7 +254,7 @@
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">ginger.catty555@gmail.com</a></p>
+								<p><a href="#">haritha110287@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
@@ -149,4 +277,28 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+</html>
+ <!-- Footer -->
+ <footer style="background-color: #444; color: white; text-align: center; padding: 20px;">
+	
+		<p>© 2024 Haritha. All rights reserved.</p>
+		<p>Massively theme by HTML5 UP | <a href="https://html5up.net/license">License</a></p>
+		<p>Special thanks to <a href="https://unsplash.com">Unsplash</a> for the demo images, <a href="https://fontawesome.io">Font Awesome</a> for the icons, and the contributors of <a href="https://jquery.com">jQuery</a>, <a href="https://github.com/ajlkn/jquery.scrollex">Scrollex</a>, and <a href="https://github.com/ajlkn/responsive-tools">Responsive Tools</a>.</p>
+	
+</footer>
+
+<script>
+	function toggleMenu() {
+		const menu = document.getElementById('menu');
+		const overlay = document.querySelector('.overlay');
+		menu.classList.toggle('active');
+		overlay.classList.toggle('active');
+	}
+
+	function toggleSubMenu() {
+		const subMenu = document.getElementById('sub-menu');
+		subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
+	}
+</script>
+</body>
 </html>
